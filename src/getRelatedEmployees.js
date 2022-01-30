@@ -8,11 +8,11 @@ function isManager(id) {
 console.log(isManager());
 
 function getRelatedEmployees(managerId) {
-  if (isManager(managerId) === true) {
+  if (isManager(managerId)) {
     const employeeName = employees
-      .filter((employe) => employe.managers.includes(managerId))
-      .map((person) => `${person.firstName} ${person.lastName}`);
-    return employeeName;
+      .filter((employe) => employe.managers.includes(managerId));
+    const fullName = employeeName.map((person) => `${person.firstName} ${person.lastName}`);
+    return fullName;
   }
   throw new Error('O id inserido não é de uma pessoa colaboradora gerente!');
 }
