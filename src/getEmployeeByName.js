@@ -5,10 +5,8 @@ const getEmployeeByName = (employeeName) => {
   if (!employeeName) {
     return {};
   }
-  return employees.find(
-    (employee) =>
-      employeeName === employee.firstName || employeeName === employee.lastName
-  );
+  return employees.find((employee) =>
+    employeeName === employee.firstName || employeeName === employee.lastName);
 };
 
 console.log(getEmployeeByName());

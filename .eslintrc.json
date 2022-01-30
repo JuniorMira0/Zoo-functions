@@ -6,7 +6,8 @@
   "rules": {
     "max-lines": "off",
     "max-params": "off",
-    "linebreak-style": "on",
+    "linebreak-style": "off",
+    "function-paren-newline": ["error", "never"],
     "no-unused-vars": [
       "error",
       {
