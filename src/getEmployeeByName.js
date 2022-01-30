@@ -7,7 +7,6 @@ const getEmployeeByName = (employeeName) => {
   }
   return employees.find(
     (employee) =>
-      // eslint-disable-next-line comma-dangle
       employeeName === employee.firstName || employeeName === employee.lastName
   );
 };
