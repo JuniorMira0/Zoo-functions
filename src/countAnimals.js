@@ -25,3 +25,5 @@ function countAnimals(animal) {
 console.log(countAnimals());
 
 module.exports = countAnimals;
+
+// requisito realizado com ajuda de Lucas Cardoso e Danilo
