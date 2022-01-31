@@ -72,3 +72,5 @@ function getAnimalMap(options) {
 }
 
 module.exports = getAnimalMap;
+
+// requisito realizado com supervisão de Lucas Cardoso
